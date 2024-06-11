@@ -6,11 +6,40 @@
         </router-link>
       </div>
       <div>
-          <input class="busca" type="text" placeholder="Buscar"></input>
+        <router-link to="/">
+          home
+        </router-link>
+
+      </div>
+      <div>
+        <router-link to="/">
+          quem somos
+        </router-link>
+      </div>
+      <div>
+        <router-link to="/">
+          adoções
+        </router-link>
+      </div>
+      <div>
+        <router-link to="/">
+          doações
+        </router-link>
+      </div>
+      <div>
+        <router-link to="/">
+          voluntariado
+        </router-link>
       </div>
       <div>
           <router-link to="/">
               <img class="icone_user" :src="perfil" id="perfil">
+          </router-link>
+
+      </div>
+      <div>
+          <router-link to="/">
+              <img class="icone_user" :src="menu" id="menu">
           </router-link>
 
       </div>
@@ -20,14 +49,14 @@
 <script>
     export default{
         name: "Navbar",
-        props: ["logo","alt","perfil"]
+        props: ["logo","alt","perfil","menu"]
     }
 </script>
 
 <style>
 #nav {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     background-color: gray;
     text-align: center;
