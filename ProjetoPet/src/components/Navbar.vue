@@ -12,9 +12,9 @@
 
       </div>
       <div>
-        <router-link to="/">
-          quem somos
-        </router-link>
+        <router-link to="/sobre">
+          <a href="/sobre">Sobre</a>       
+         </router-link>
       </div>
       <div>
         <router-link to="/">
@@ -81,7 +81,7 @@
   }
 
   .icone_user{
-    width: 60px;
+    width: 80px;
     padding: 20px;
   }
 
